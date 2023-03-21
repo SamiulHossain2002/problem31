@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show your all friends</title>
+    <style>
+        #friends{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 26px;
+        }
+        .friend{
+            border: 2px solid sandybrown;
+            padding: 20px;
+        }
+        @media screen and (max-width: 667px) {
+            #friends{
+            grid-template-columns: repeat(1,1fr);
+            
+           }
+        }
+  
+
+    
+    </style>
+</head>
+<body>
+    <h1>Show your all friends</h1>
+    <div id="friends">
+        
+    </div>
+    
+
+
+    <script src="friends.js"></script>
+</body>
+</html>
